@@ -37,7 +37,7 @@
   height: 450px;
   background-color: rgba(0, 0, 0, 0.671);
   border-radius: 10px;
-  margin-top: 1.2rem;
+  margin-top: 0.5rem;
   margin-right: 0.5rem;
   display: flex;
   justify-content: center;
@@ -58,9 +58,9 @@
   justify-content: center;
 }
 .parrafo {
+  width: 60vw;
+  height: auto;
   font-size: 1.6rem;
-  min-width: 25rem;
-  height: 50vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@
 }
 .cvButton {
   width: 11rem;
-  height: 6rem;
+  height: 4rem;
   background-color: white;
   border: none;
   border-radius: 0.3rem;
@@ -93,12 +93,19 @@
   color: black;
   background-color: rgb(255, 145, 0);
   width: 12rem;
-  height: 7rem;
+  height: 5rem;
 }
 .downloadIcon {
   margin-left: 0.5rem;
 }
-
+@media only screen and (max-width: 1000px) {
+  .parrafo {
+    width: 50vw;
+  }
+  .retrato {
+    margin-top: 5rem;
+  }
+}
 @media only screen and (max-width: 845px) {
   .sectionInfo {
     height: auto;
