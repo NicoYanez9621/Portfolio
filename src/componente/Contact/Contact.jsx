@@ -144,7 +144,7 @@ const Contact = () => {
                   }
                   onChange={handleOnChange}
                   name="fullName"
-                  placeholder="Name"
+                  placeholder="Ingresa tu nombre"
                   type="text"
                 />
                 {errors.fullName.state ? (
@@ -160,7 +160,7 @@ const Contact = () => {
                   }
                   onChange={handleOnChange}
                   name="email"
-                  placeholder="Email"
+                  placeholder="Ingresa tu email"
                   type="text"
                 />
                 {errors.email.state ? (
@@ -176,7 +176,7 @@ const Contact = () => {
               className={errors.message.state ? style.textError : style.text}
               onChange={handleOnChange}
               name="message"
-              placeholder="Message"
+              placeholder="Ingresa el mensaje"
               cols="30"
               rows="10"
             ></textarea>
