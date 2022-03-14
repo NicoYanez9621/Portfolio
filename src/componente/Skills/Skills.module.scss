@@ -1,4 +1,71 @@
 .skills {
-  background-color: antiquewhite;
+  background: linear-gradient(90deg, #fc7e00, #753b00);
+  color: #0a0908b9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 110vh;
+}
+.subTitle {
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 5rem;
+  text-align: center;
+  display: inline-block;
   color: black;
+}
+.fullContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  padding: 1px;
+}
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+}
+.box {
+  position: relative;
+  padding: 1px;
+  transition: 300ms all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 40px;
+}
+
+.box:hover .tooltip {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  background-color: rgb(245, 239, 239);
+  bottom: -45px;
+}
+.icon {
+  width: 8rem;
+  height: 8rem;
+  color: black;
+  transition: 300ms;
+}
+.icon:hover {
+  color: white;
+}
+.tooltip {
+  position: absolute;
+  display: none;
+  transition: 300ms all;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  z-index: 100;
 }

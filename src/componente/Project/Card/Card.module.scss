@@ -1,0 +1,67 @@
+.myswip {
+  width: 200%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.slideContainer {
+  display: flex;
+  flex-direction: column;
+}
+.foto {
+  width: 100%rem;
+  height: 300px;
+  border-radius: 10px;
+}
+.title {
+  margin-left: 3rem;
+}
+.parrafo {
+  width: 100%rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.demoButton {
+  width: 7rem;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background-color: white;
+  font-weight: 600;
+  transition: 200ms;
+  margin-bottom: 1.5rem;
+}
+.demoButton:hover {
+  color: rgb(255, 145, 0);
+  background-color: black;
+}
+
+.gitButton {
+  width: 4rem;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background-color: white;
+  font-weight: 600;
+  transition: 200ms;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.gitButton:hover {
+  color: rgb(255, 145, 0);
+  background-color: black;
+}
+
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

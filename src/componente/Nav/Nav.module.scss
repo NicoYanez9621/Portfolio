@@ -40,7 +40,33 @@
 .spanText:hover {
   color: #ff8800;
 }
-
+.scrollContainer {
+  display: flex;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  transition: 300ms;
+  position: absolute;
+  bottom: -50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.scrollIcon {
+  width: 35px;
+  height: 35px;
+  color: #7562e0;
+}
+.scrollContainer:hover {
+  padding-bottom: 5px;
+}
+.effect {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  display: flex;
+}
 @media only screen and (max-width: 845px) {
   .nav {
     flex-direction: column;

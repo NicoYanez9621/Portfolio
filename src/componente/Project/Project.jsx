@@ -1,9 +1,14 @@
 import React from "react";
+import Card from "./Card/Card.jsx";
 import style from "./Project.module.scss";
+
 const Project = () => {
   return (
-    <section id="Project" className={style.project}>
-      <h2>Project</h2>
+    <section id="projects" className={style.project}>
+      <span className={style.subTitle}>Proyectos</span>
+      <div className={style.swiperContainer}>
+        <Card />
+      </div>
     </section>
   );
 };

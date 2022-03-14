@@ -1,4 +1,76 @@
 .contenedor {
   background-color: black;
   color: white;
+  width: 100%;
+  height: auto;
+  min-height: 15vh;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%rem;
+}
+.data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 20%;
+}
+.data:hover .icon {
+  color: rgb(255, 115, 0);
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #ffffff;
+  transition: 300ms;
+  margin-right: 0.5rem;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: 300ms;
+  font-size: 1.3rem;
+}
+
+.link:hover .icon {
+  color: rgb(255, 115, 0);
+}
+
+.link:hover {
+  color: rgb(255, 115, 0);
+}
+.copy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media only screen and (max-width: 845px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .data {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .data {
+    font-size: 1rem;
+  }
+  .link {
+    font-size: 1rem;
+  }
+  .copy {
+    font-size: 15px;
+  }
 }

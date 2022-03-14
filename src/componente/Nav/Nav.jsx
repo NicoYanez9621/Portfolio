@@ -60,7 +60,7 @@ const Nav = () => {
           onClick={closeMenu}
           className={style.navButton}
           activeClass="active"
-          to="about"
+          to="projects"
           spy={true}
           smooth={true}
           offset={50}
@@ -73,7 +73,7 @@ const Nav = () => {
           onClick={closeMenu}
           className={style.navButton}
           activeClass="active"
-          to="about"
+          to="skills"
           spy={true}
           smooth={true}
           offset={50}
@@ -86,7 +86,7 @@ const Nav = () => {
           onClick={closeMenu}
           className={style.navButton}
           activeClass="active"
-          to="about"
+          to="contact"
           spy={true}
           smooth={true}
           offset={50}

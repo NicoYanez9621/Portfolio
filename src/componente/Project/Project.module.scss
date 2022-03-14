@@ -1,4 +1,38 @@
 .project {
-  background-color: aqua;
-  color: black;
+  background: linear-gradient(50deg, #0e1518, #02005e);
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-height: 115vh;
+}
+.subTitle {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 5rem;
+  text-align: center;
+  display: inline-block;
+}
+.swiperContainer {
+  width: 60%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  padding: 1px;
+  position: relative;
+}
+@media only screen and (max-width: 845px) {
+  .project {
+  }
+  .swiperContainer {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .swiperContainer {
+    width: 90%;
+  }
 }
