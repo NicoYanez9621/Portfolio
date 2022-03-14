@@ -26,12 +26,11 @@ const Card = () => {
           <div className={style.slideContainer}>
             <img className={style.foto} src={FoodApp} alt="trivia" />
             <div>
-              <h3 className={style.title}>Food App (Full Stack)</h3>
-
+              <h3 className={style.title}>Weather App (Front-end)</h3>
               <p className={style.parrafo}>
-                En Food App encontraras +100 recetas donde podras filtrar,
-                buscar y crear nuevas recetas. Tecnologias utilizadas: ReactJS,
-                Redux, NodeJS, Express, Sequalize, PostgreSQL
+                En Weather App encontraras el pronostico del clima de la
+                ubicacion que ingreses. Podras buscar el lugar que desees.
+                Tecnologias utilizadas: ReactJS, Redux.
               </p>
               <div className={style.buttonsContainer}>
                 <a

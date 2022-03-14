@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "./Nav.module.scss";
-import logo from "./android-chrome-512x512.png";
 import { CgClose } from "react-icons/cg";
 import { UilBars } from "@iconscout/react-unicons";
 import { Link } from "react-scroll";
@@ -15,7 +14,8 @@ const Nav = () => {
   return (
     <nav className={showMenu ? style.navShow : style.nav}>
       <div className={style.topNav}>
-        <img className={style.img} src={logo} alt="img not found" />
+        {/* <img className={style.img} src={logo} alt="img not found" /> */}
+        {/*  <span className={style.img}>Nicolas Yañez</span> */}
         {showMenu ? (
           <CgClose
             onClick={() => setShowMenu(!showMenu)}

@@ -1,5 +1,5 @@
 .sectionInfo {
-  background: linear-gradient(70deg, #02005c, rgb(136, 0, 141));
+  background: linear-gradient(90deg, #fc7e00, #753b00);
   color: white;
   align-items: center;
   display: flex;
@@ -8,10 +8,10 @@
   height: 110vh;
 }
 .subTitle {
-  color: white;
-  width: 20vw;
+  color: black;
+  width: 60vw;
   height: 10vh;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
   margin-top: 5rem;
   text-align: center;
@@ -68,7 +68,7 @@
   flex-direction: column;
   color: white;
   background-color: rgba(0, 0, 0, 0.671);
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 3rem;
   border-radius: 15px;
   margin: 0%;
@@ -90,10 +90,8 @@
   transition: 300ms;
 }
 .cvButton:hover {
-  color: black;
-  background-color: rgb(255, 145, 0);
-  width: 12rem;
-  height: 5rem;
+  color: rgb(255, 145, 0);
+  background-color: black;
 }
 .downloadIcon {
   margin-left: 0.5rem;
@@ -154,7 +152,7 @@
     width: 100%;
   }
   .subTitle {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 5rem;
   }
   .parrafo {
