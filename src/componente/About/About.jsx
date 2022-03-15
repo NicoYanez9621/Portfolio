@@ -29,7 +29,7 @@ const About = () => {
             <a
               className={style.cvButton}
               download=""
-              href="Airton Nicolas Yañez - Full stack development 3 (2).pdf"
+              href="Airton Nicolas Yañez - Full stack development.pdf"
             >
               Descargar CV
               <UilImport className={style.downloadIcon} />
