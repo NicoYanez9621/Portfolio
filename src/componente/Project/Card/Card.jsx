@@ -1,11 +1,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import style from "./Card.module.scss";
 import "swiper/css";
-import { Navigation, Pagination } from "swiper";
-import FoodApp from "./descarga.jpg";
-import MedicalHub from "./descarga1.jpg";
-import TriviaFoto from "./descarga2.jpg";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import weather from "./weather.jpg";
+import countries from "./countries.jpg";
+import canchera from "./canchera.jpg";
 import { UilGithubAlt } from "@iconscout/react-unicons";
 
 const Card = () => {
@@ -13,18 +17,19 @@ const Card = () => {
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={50}
         loop={true}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        navigation
+        scrollbar={{ draggable: true }}
+        modules={[Pagination, Navigation, Scrollbar, A11y]}
         className={style.myswip}
       >
         <SwiperSlide>
           <div className={style.slideContainer}>
-            <img className={style.foto} src={FoodApp} alt="trivia" />
+            <img className={style.foto} src={weather} alt="trivia" />
             <div>
               <h3 className={style.title}>Weather App (Front-end)</h3>
               <p className={style.parrafo}>
@@ -37,13 +42,13 @@ const Card = () => {
                   className={style.demoButton}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/ezexgonzalez/FoodAppPI"
+                  href="https://weather-app-omega-snowy.vercel.app/"
                 >
                   Demo
                 </a>
                 <a
                   className={style.gitButton}
-                  href="https://github.com/ezexgonzalez/FoodAppPI"
+                  href="https://github.com/NicoYanez9621/weather-app"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -55,26 +60,29 @@ const Card = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className={style.slideContainer}>
-            <img className={style.foto} src={MedicalHub} alt="trivia" />
+            <img className={style.foto} src={countries} alt="trivia" />
             <div>
-              <h3 className={style.title}>Medical Hub (Front-End)</h3>
+              <h3 className={style.title}>Countries App (Full Stack)</h3>
               <p className={style.parrafo}>
-                Medical Hub es una app para gestion medica, puedes pedir turnos,
-                pagar turnos/estudios, ver horarios disponibles y mucho mas!
-                Tecnologias utilizadas: ReactJS, Redux, JavaScript, Css
+                Es una app donde se puede buscar un pais para agregar una
+                actividad que te gusta, ademas puedes buscar por nombre de pais,
+                filtrar por actividades y continentes y ordenar los resultados
+                alfabeticamente y por su poblacion. Tecnologias utilizadas:
+                React.js, Redux, JavaScript, SCSS, Node.js, Express, Sequelize,
+                PostgrateSQL
               </p>
               <div className={style.buttonsContainer}>
                 <a
                   className={style.demoButton}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://medicalhub.netlify.app/"
+                  href="https://countries-pi-henry.vercel.app/home"
                 >
                   Demo
                 </a>
                 <a
                   className={style.gitButton}
-                  href="https://github.com/ezexgonzalez/medical-hub-pf"
+                  href="https://github.com/NicoYanez9621/Countries-PI-Henry"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -86,25 +94,28 @@ const Card = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className={style.slideContainer}>
-            <img className={style.foto} src={TriviaFoto} alt="trivia" />
+            <img className={style.foto} src={canchera} alt="trivia" />
             <div>
-              <h3 className={style.title}>Trivia App (React)</h3>
+              <h3 className={style.title}>Canchera App (Ful Stack)</h3>
               <p className={style.parrafo}>
-                En Trivia app encontraras un juego de preguntas con categorias
-                variadas en ingles. Esta app fue desarrolada con ReactJS.
+                Es una app donde se puede buscar canchas de futbol y poder
+                reservarlas. Se puede buscar por club, ordenar los resultados,
+                pagar tu reserva por medio de Mercado Pago. Tecnologias
+                utilizadas: React.js, Redux, JavaScript, SCSS, Node.js, Express,
+                Sequelize, PostgrateSQL
               </p>
               <div className={style.buttonsContainer}>
                 <a
                   className={style.demoButton}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://trivia-app-nu.vercel.app/"
+                  href="https://alquilatucancha.com/"
                 >
                   Demo
                 </a>
                 <a
                   className={style.gitButton}
-                  href="https://github.com/ezexgonzalez/TriviaApp"
+                  href="https://github.com/NicoYanez9621/soccer-reserve"
                   rel="noreferrer"
                   target="_blank"
                 >

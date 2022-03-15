@@ -94,6 +94,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(form);
     if (
       !send.loading &&
       !errors.email.state &&
@@ -102,7 +103,7 @@ const Contact = () => {
       errors.validate
     ) {
       emailjs
-        .send("service_rk6vg1f", "template_3l5rxpi", form, "OQn-tL3bPgEibwmTY")
+        .send("service_rk6vg1f", "template_47p2lmo", form, "gDvGiBlUGqHeUGiMI")
         .then(
           (result) => {
             setSend((data) => {
