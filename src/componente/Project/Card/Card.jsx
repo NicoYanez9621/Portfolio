@@ -109,13 +109,13 @@ const Card = () => {
                   className={style.demoButton}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://alquilatucancha.com/"
+                  href="https://canchera.vercel.app/"
                 >
                   Demo
                 </a>
                 <a
                   className={style.gitButton}
-                  href="https://github.com/NicoYanez9621/soccer-reserve"
+                  href="https://github.com/jonrovner/Canchera"
                   rel="noreferrer"
                   target="_blank"
                 >
